@@ -1,22 +1,22 @@
 public class Prodotti {
 
-    private String id;
+    private Long id;
     private String nome;
     private String categoria;
     private double price;
 
-    public Prodotti(String id, String nome, String categoria, double price) {
+    public Prodotti(Long id, String nome, String categoria, double price) {
         this.id = id;
         this.nome = nome;
         this.categoria = categoria;
         this.price = price;
     }
 
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

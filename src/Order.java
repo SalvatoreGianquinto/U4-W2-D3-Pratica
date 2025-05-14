@@ -2,7 +2,7 @@ import java.time.LocalDate;
 import java.util.List;
 
 public class Order {
-    private String id;
+    private Long id;
     private String status;
     private LocalDate orderDate;
     private LocalDate deliveryDate;
@@ -12,21 +12,20 @@ public class Order {
     // Costruttore
 
 
-    public Order(String id, String status, LocalDate orderDate, LocalDate deliveryDate, List<Prodotti> prodotti, Customer customer) {
+    public Order(Long id, String status, LocalDate orderDate, LocalDate deliveryDate) {
         this.id = id;
         this.status = status;
         this.orderDate = orderDate;
         this.deliveryDate = deliveryDate;
-        this.prodotti = prodotti;
-        this.customer = customer;
+
     }
 
     // Getter e Setter
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -81,4 +80,5 @@ public class Order {
                 ", customer=" + customer +
                 '}';
     }
+
 }

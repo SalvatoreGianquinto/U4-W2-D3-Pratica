@@ -1,19 +1,19 @@
 public class Customer {
-    private String id;
+    private Long id;
     private String nome;
     private Integer tier;
 
-    public Customer(String id, String nome, Integer tier) {
+    public Customer(Long id, String nome, Integer tier) {
         this.id = id;
         this.nome = nome;
         this.tier = tier;
     }
 
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
